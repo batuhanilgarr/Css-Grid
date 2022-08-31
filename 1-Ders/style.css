@@ -35,12 +35,16 @@ body {
 }
 
 .item:first-child {
-  /* grid-column-start: 1; 3. kolondan başlar 
- grid-column-end: 5;  4. kolona kadar 
+  /*grid-row-start: 1;  1. satırdan başlar */
+  /*grid-row-end: 4; 4. satıra kadar */
+  /*grid-row: 1 / 4;  1. satırdan başlar 4. satıra kadar */
+  /* grid-row:1 / span 3;  1. satırdan başlar 3. satıra kadar */
 
- grid-row-start: 1;  1. satırdan başlar 
- grid-row-end: 4; 4. satıra kadar */
+  /* grid-column-start: 1; 1. kolondan başlar */
+  /*grid-column-end: 5;  4. kolona kadar */
+  /*grid-column: 1 / 5;  1. kolonu 5. kolona kadar */
+  /*grid-column: 1 / span 3; 1. sütundan başlar 3. sütun kadar */
 
 
- grid-column: 1 / 5; /* 1. kolonu 5. kolona kadar */
+  grid-area: 1 / 1 / span 3 / span 3;  /* başlangıç satırı -- başlangıç kolon'u -- bitiş satırı -- bitiş kolon'u */
 }
